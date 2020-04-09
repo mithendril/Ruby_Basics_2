@@ -43,7 +43,7 @@ end
 
 # Méthode qui :  Trie la liste de handle par ordre alphabétique.
 def order_tab (array)
-  order_tab = array.sort{|a,b| a.upcase <=> b.upcase}
+  order_tab = array.sort{|a,b| a.upcase <=> b.upcase} 
   return order_tab
 end
 
