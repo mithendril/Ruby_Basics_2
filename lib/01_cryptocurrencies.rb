@@ -31,7 +31,7 @@ end
 # Le nombre de crypto contenant le mot "coin".
 def crypto_w_coin (my_hash)
   # my_hash.selected -> créer un hash avec les couples (key,value) qui ont vérifié la condition k.match("coin") == true
-  result_coin = my_hash.select {|k,v| k.match("coin")} 
+  result_coin = my_hash.select {|k,v| k.downcase.match("coin")} 
   count = 0
   result_coin.each_key do |key|
     count += 1 
